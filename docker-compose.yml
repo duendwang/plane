@@ -96,7 +96,7 @@ services:
     command: node admin/server.js admin
 
   live:
-    image: ${DOCKERHUB_USER:-makeplane}/plane-live:${APP_RELEASE:-stable}\
+    image: ${DOCKERHUB_USER:-makeplane}/plane-live:${APP_RELEASE:-stable}
     security_opt:
       - "no-new-privileges:true"
     environment:
